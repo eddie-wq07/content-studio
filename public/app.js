@@ -1,6 +1,6 @@
 import {loadWorkspace,saveWorkspace,listWorkspaces,removeWorkspace,exportWorkspace,connectWorkspace,syncWorkspace,disconnectWorkspace,demoWorkspace} from './modules/workspace.js';
 let data;let sortAscending=false;const $=id=>document.getElementById(id),fmt=n=>n==null?'—':Number(n).toLocaleString(),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function tab(name){for(const s of document.querySelectorAll('main>section'))s.hidden=s.id!==name;for(const b of document.querySelectorAll('nav button'))b.classList.toggle('active',b.dataset.tab===name);$('heading').textContent={overview:'Overview',posts:'Instagram posts',connection:'Connection',deep:'Deep Analysis'}[name];}
+function tab(name){window.scrollTo({top:0,behavior:'instant'});for(const s of document.querySelectorAll('main>section'))s.hidden=s.id!==name;for(const b of document.querySelectorAll('nav button'))b.classList.toggle('active',b.dataset.tab===name);$('heading').textContent={overview:'Overview',posts:'Instagram posts',connection:'Connection',deep:'Deep Analysis'}[name];}
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 function safeLink(s){try{const u=new URL(s);return u.protocol==='https:'?u.href:'#';}catch{return '#';}}
 function reelFollows(p){return p.nativeInsights?.follows??p.metrics?.follows;}
