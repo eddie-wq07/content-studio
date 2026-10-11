@@ -1,0 +1,4 @@
+{
+  "name": "content-studio", "version": "1.0.0", "description": "Open-source creator analytics by Eddie Jung", "type": "module", "license": "MIT", "author": "Eddie Jung", "engines": {"node": ">=22"},
+  "scripts": {"dev": "node scripts/dev.mjs", "start": "node scripts/dev.mjs", "build": "node scripts/build.mjs", "test": "node --test test/*.test.mjs", "check": "node --check public/app.js && node --check public/modules/workspace.js && node --check api/instagram.js"}
+}
