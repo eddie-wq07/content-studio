@@ -31,3 +31,8 @@ main>section{min-width:0}header{align-items:center}.toolbar{align-items:center;g
 .table-scroll table{min-width:1100px}.table-scroll th:first-child,.table-scroll td:first-child{padding-left:20px}.table-scroll th:last-child,.table-scroll td:last-child{padding-right:20px}
 @media(max-width:800px){aside{display:block;overflow:visible;padding:16px}nav{margin-top:14px}nav button{width:auto;flex:none}.aside-bottom{display:none}.cards,.grid,.deep-grid,.goal-leaders{gap:16px}.table-scroll table{display:table;max-height:none;overflow:visible}}
 @media(max-width:480px){nav button{flex:1}.cards{gap:12px}}
+
+/* Creator attribution stays in the sidebar. */
+.creator-credit{display:inline-block;color:inherit;text-decoration:none;transform-origin:left center;transition:transform 160ms ease,color 160ms ease}
+.creator-credit:hover,.creator-credit:focus-visible{transform:scale(1.08);color:var(--blue,#2997ff);text-decoration:underline;text-underline-offset:4px}
+@media(prefers-reduced-motion:reduce){.creator-credit{transition:none}}
