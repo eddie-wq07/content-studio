@@ -6,6 +6,34 @@ Free, open-source creator analytics. Find the reels that gain followers, compare
 
 **Your workspace stays on your computer.** No subscriptions, central account database, publishing permissions, or access to local video folders.
 
+## See it in action
+
+Screenshots use the built-in demo with made-up data.
+
+### Your creator dashboard
+
+Track audience growth, views, reach, and the reels bringing in followers.
+
+![Content Studio overview with audience growth and account metrics](docs/screenshots/overview.jpg)
+
+### Deep Analysis
+
+Explore patterns between views, watch time, shares, and new followers. Select a point to inspect a reel.
+
+![Deep Analysis comparing reel views and new followers](docs/screenshots/deep-analysis-detail.jpg)
+
+### Reel metrics
+
+Sort your posts by views, shares, follows, or follow rate, and add insights from your phone.
+
+![Sortable reel metrics including follows and follow conversion](docs/screenshots/post-metrics.jpg)
+
+### Easy setup
+
+Try the demo, import an existing workspace, or follow the local Instagram connection guide.
+
+![Content Studio setup and workspace import](docs/screenshots/getting-started.jpg)
+
 ## Start in under a minute
 
 Install [Node.js 24](https://nodejs.org), then:
