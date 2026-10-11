@@ -1,18 +1,22 @@
 # Content Studio by Eddie Jung
 
+[Public demo](https://content-studio-by-eddie.vercel.app) · [GitHub](https://github.com/eddie-wq07/content-studio)
+
 Free, open-source creator analytics. Find the reels that gain followers, compare follow rates, and explore patterns with simple charts and playable previews.
 
 **Your workspace stays on your computer.** No subscriptions, central account database, publishing permissions, or access to local video folders.
 
 ## Start in under a minute
 
-Install [Node.js 22 or newer](https://nodejs.org), then:
+Install [Node.js 24](https://nodejs.org), then:
 
 ```sh
 git clone https://github.com/eddie-wq07/content-studio.git
 cd content-studio
 npm start
 ```
+
+On macOS, you can also double-click **Start Content Studio.command** after downloading the repository.
 
 Open **http://localhost:5002**. No dependency installation is required. Choose **Try the demo**, **Import your insights**, or expand the Instagram connection guide. For another port: `PORT=5003 npm start`.
 
@@ -26,7 +30,7 @@ Open **http://localhost:5002**. No dependency installation is required. Choose *
 
 Meta app setup requires `instagram_business_basic` and `instagram_business_manage_insights`. Development apps require tester enrollment. A public OAuth service for arbitrary users requires Meta approval; this project does **not** claim to bypass that. [Official documentation](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/).
 
-Meta may not return follows or watch time for a reel. Missing metrics remain blank. Existing exports can contain manually captured phone insights; their source and capture time remain visible. Instagram media URLs expire: reconnect and refresh to renew previews. Reel previews link to Instagram if playback fails.
+Meta may not return follows or watch time for a reel. Missing metrics remain blank. Use **Add phone insights** on a post to enter its follows, views, individual viewers and average watch time from the same Instagram insights screen. The charts update immediately. Existing exports can also contain manually captured phone insights; their source and capture time remain visible. Instagram media URLs expire: reconnect and refresh to renew previews. Reel previews link to Instagram if playback fails.
 
 ## Analytics
 
